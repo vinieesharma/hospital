@@ -1,0 +1,62 @@
+.profession-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px;
+    position: relative;
+  }
+  
+  .profession-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width:fit-content;
+    width: 22%;
+  }
+  
+  .profession-heading {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3a6ea1;
+  }
+  
+  .profession-para {
+    font-size: 0.9rem;
+    color: #35639c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profession-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 60px;
+      position: relative;
+    }
+    
+    .profession-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width:fit-content;
+      width: 100%;
+    }
+    
+    .profession-heading {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #3a6ea1;
+    }
+    
+    .profession-para {
+      font-size: 0.9rem;
+      color: #35639c;
+    }
+  }

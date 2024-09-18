@@ -1,0 +1,11 @@
+export { default as RightArrow } from "./right-arrow.png";
+export { default as Testimonial4 } from "./testimonials_04.jpg";
+export { default as Testimonial5 } from "./testimonials_05.jpg";
+export { default as Testimonial6 } from "./testimonials_06.jpg";
+export { default as Testimonial7 } from "./testimonials_07.jpg";
+export { default as ceo } from "./ceo.jpeg";
+export { default as teamMember1 } from "./teamMember1.jpeg";
+export { default as teamMember2 } from "./teamMember2.jpeg";
+export { default as teamMember3 } from "./teamMember3.jpeg";
+export { default as teamMember4 } from "./teamMember4.jpeg";
+export { default as profile } from "./profile.png";

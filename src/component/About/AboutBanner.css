@@ -1,0 +1,367 @@
+/* Banner container */
+.aboutbanner {
+    background-image: url('../../img/aboutblue.png');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: 0px 0px ;
+    background-repeat: no-repeat;
+    height: 85rem; /* 900px */
+    display: flex;
+   
+    padding: 150px 2rem; /* 20px */
+    color: white;
+    /* overflow-y: hidden; */
+    position: relative;
+    /* background-color: rgb(164, 164, 219); */
+    background-attachment: fixed;
+    
+  }
+  
+  .aboutbanner .custom-shape-divider-bottom-1725689494 {
+    position: absolute;
+    top: 70rem; /* 700px */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-1725689494 svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 19.56rem; /* 313px */
+  }
+  
+  .custom-shape-divider-bottom-1725689494 .shape-fill {
+    fill:white;
+  }
+  
+  /* Banner content */
+  .aboutbanner .aboutbanner-content {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    overflow-y: hidden;
+    padding-left: 3rem; /* 30px */
+  }
+  
+  /* Banner text */
+  .aboutbanner-content .aboutbanner-text {
+    width: 55%;
+    height: fit-content;
+    margin-top: -10px;
+    font-size: 76px; /* 128px */
+    margin-bottom: 1.25rem; /* 20px */
+    text-align: left;
+   
+    font-weight: 800;
+    font-family: "overlock", sans-serif;
+    
+  }
+  .aboutbanner h1{
+    padding-top: -200px;
+  }
+  .aboutbanner .aboutbanner-content p{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 50px;
+  }
+  
+
+  
+  /* Schedule container */
+  .aboutschedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  
+  .aboutschedule-container .schedule-texts {
+    display: flex;
+    align-items: left;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .aboutschedule-container .schedule-texts .schedule-text {
+    text-align: left;
+    margin-right: 0.625rem; /* 10px */
+      width: 12.5rem; /* 200px */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .aboutschedule-container .schedule-texts a{
+    text-decoration: none;
+    width:fit-content;
+   
+  }
+  
+  
+  .aboutschedule-container .schedule-text .callno {
+    width:20rem;
+    font-size: 32px; /* 30px */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4px;
+    color: white;
+  
+  }
+  
+  .aboutbanner .schedule-texts .schedule-text:hover .callno {
+    color: #fbf9f9;
+  }
+  
+  .aboutbanner .schedule-texts .schedule-text:hover .callno .icon {
+    color: #05074f;  }
+
+  .aboutbanner .schedule-texts .schedule-text .callno .icon {
+    color: #edefed;
+  }
+  .vertical-divider {
+    border: none;
+    border-left: 0.0625rem solid white; /* 1px */
+    height: 5rem; /* 40px */
+    margin: 0 0.625rem; /* 10px */
+    margin-right: 2rem;
+  }
+  
+  
+@media screen and (max-width: 768px) {
+    /* Banner container */
+.aboutbanner {
+    background-image: url('../../img/aboutblue.png');
+    /* Replace with your image URL */
+    background-size:100% 700px;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: fit-content; /* 900px */
+    display: flex;
+    background-color: rgb(46, 46, 177);
+    object-fit: fill;
+
+   
+    padding: 200px 2rem; /* 20px */
+    color: white;
+    /* overflow-y: hidden; */
+    position: relative;
+    /* background-color: rgb(164, 164, 219); */
+    background-attachment: fixed;
+    
+  }
+  
+  .aboutbanner .custom-shape-divider-bottom-1725689494 {
+    position: absolute;
+    bottom: 0px; /* 700px */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-1725689494 svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 10.56rem; /* 313px */
+  }
+  
+  .custom-shape-divider-bottom-1725689494 .shape-fill {
+    fill:white;
+  }
+  
+  /* Banner content */
+  .aboutbanner .aboutbanner-content {
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    overflow-y: hidden;
+    padding-left: 3rem; /* 30px */
+  
+  }
+  
+  /* Banner text */
+  .aboutbanner-content .aboutbanner-text {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    font-size: 36px; /* 128px */
+    margin-bottom: 1.25rem; /* 20px */
+    text-align: left;
+   
+    font-weight: 800;
+    font-family: "overlock", sans-serif;
+    
+  }
+  .aboutbanner h1{
+    padding-top: -200px;
+  }
+  .aboutbanner .aboutbanner-content p{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 50px;
+  }
+  
+
+  
+  /* Schedule container */
+  .aboutschedule-container {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5rem;
+    gap:40px
+  }
+  
+  .aboutschedule-container .schedule-texts {
+    display: block;
+    align-items: left;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .aboutschedule-container .schedule-texts .schedule-text {
+    text-align: left;
+    margin-right: 0.625rem; /* 10px */
+      width: 12.5rem; /* 200px */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .aboutschedule-container .schedule-texts a{
+    text-decoration: none;
+    width:fit-content;
+   
+  }
+  
+  
+  .aboutschedule-container .schedule-text .callno {
+    width:20rem;
+    font-size: 32px; /* 30px */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4px;
+    color: white;
+  
+  }
+  
+  .aboutbanner .schedule-texts .schedule-text:hover .callno {
+    color: #fbf9f9;
+  }
+  
+  .aboutbanner .schedule-texts .schedule-text:hover .callno .icon {
+    color: #05074f;  }
+
+  .aboutbanner .schedule-texts .schedule-text .callno .icon {
+    color: #edefed;
+  }
+  .vertical-divider {
+    border: none;
+    border-left: 0.0625rem solid white; /* 1px */
+    height: 5rem; /* 40px */
+    margin: 0 0.625rem; /* 10px */
+    margin-right: 2rem;
+    display: none;
+  }
+      
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+
+  /* Banner container */
+  .aboutbanner {
+    background-image: url('../../img/aboutblue.png');
+    /* Replace with your image URL */
+    background-size:100% 800px;
+    /* background-position:auto ; */
+    background-repeat: no-repeat;
+    height: 75vh; /* 900px */
+    display: flex;
+    /* background-color: rgb(46, 46, 177); */
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 100px;
+    padding-bottom: -100px;
+    overflow: hidden;
+
+}
+  
+  .aboutbanner .custom-shape-divider-bottom-1725689494 {
+    position: absolute;
+    bottom: 0px; /* 700px */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border: none;
+    outline: none;
+  
+}
+  
+  .custom-shape-divider-bottom-1725689494 svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 10.56rem; /* 313px */
+  
+
+}
+  
+  .custom-shape-divider-bottom-1725689494 .shape-fill {
+    fill:white;
+  }
+  
+  /* Banner content */
+  .aboutbanner .aboutbanner-content {
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    overflow-y: hidden;
+    padding-left: 3rem; /* 30px */
+  
+  }
+  
+  /* Banner text */
+  .aboutbanner-content .aboutbanner-text {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    font-size: 36px; /* 128px */
+    margin-bottom: 1.25rem; /* 20px */
+    text-align: left;
+   
+    font-weight: 800;
+    font-family: "overlock", sans-serif;
+    
+  }
+  .aboutbanner .aboutbanner-content h1{
+    padding-top:0px;
+    font-size: 5rem;
+    width: 50%;
+  }
+  .aboutbanner .aboutbanner-content p {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 50px;
+    width: 80%;
+}
+
+}

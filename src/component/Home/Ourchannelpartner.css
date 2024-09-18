@@ -1,0 +1,334 @@
+/* Carousel.css */
+
+.ourchannelpartner-heading {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  /* Center text if not already handled in HTML */
+  color: black;
+  text-transform: capitalize;
+  overflow-x: hidden;
+  font-size: 46px;
+}
+
+.ourchnnelpartner-maindiv {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  /* background-color: #E9F3FF; */
+  background-color: white;
+
+  padding-top: 30px;
+  margin-bottom: 100px;
+  padding-left: 7%;
+  margin-top: 30px;
+
+}
+
+
+.ourchnnelpartner-card-slider {
+  width: 40%;
+  height: 500px;
+
+  /* Adjust height to match parent */
+  margin-top: 0px;
+  scale: 1;
+  background-color: transparent;
+  /* border-radius: 100px; */
+
+
+
+
+}
+
+/* .ourchnnelpartner-card-slider .swiper {
+  border-radius: 200px;
+} */
+
+.ourchnnelpartner-card-slider .swiper-slide {
+  width: 40%;
+
+  height: 500px;
+  /* Adjust height to match parent */
+  position: relative;
+  color: white;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.swiper-slide.swiper-button{
+  left:100px;
+  top:0;
+  color: red;
+}
+
+
+.swiper-slide .slide-content {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(10, 10, 10, 0.5);
+  height: fit-content;
+  /* padding: 50px; */
+  padding-bottom: 40px;
+  padding-left: 20px;
+  /* margin-left: 10%; */
+  object-fit: cover;
+  padding-top: 10px;
+}
+
+.ourchnnelpartner-card-slider .swiper-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  /* border-radius: 50px; */
+  border-radius: 10px;
+  object-fit: cover;
+  object-position:0px 0px;
+  
+
+  
+
+}
+
+.swiper-slide p {
+  width: 90%;
+}
+.slide-content .slide-button{
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  background-color: #3152A9;
+  color: white;
+  border: none;
+}
+.ouchannelpartne-content {
+  width: 60%;
+  height: fit-content;
+  margin: 0;
+  scale: 0.9;
+  margin-top: -20px;
+  margin-left: 20px;
+
+}
+
+.ourchannel-partner {
+  width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 5%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 50px;
+  padding-right: 50px;
+
+  border-radius: 10px;
+}
+
+.ourchannel-partner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #3a6ea1;
+}
+
+.ourchannel-partner form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.ourchannel-partner label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3a6ea1;
+  font-size: 18px;
+}
+
+.ourchannel-partner input,
+.ourchannel-partner textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.ourchannel-partner button {
+  padding: 10px 20px;
+  background-color: #3152A9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 2rem;
+}
+
+.ourchannel-partner button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Carousel.css */
+
+  .ourchannelpartner-heading {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding-top: 0px;
+    text-align: center;
+    /* Center text if not already handled in HTML */
+    color: #3a6ea1;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    font-size: 4rem;
+  }
+
+  .ourchnnelpartner-maindiv {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    /* background-color: #E9F3FF; */
+    background-color: white;
+
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 7%;
+    margin-top: -30px;
+
+  }
+
+  .ourchnnelpartner-card-slider {
+    width: 100%;
+    height: fit-content;
+    /* Adjust height to match parent */
+    margin-top: -30px;
+    scale: 0.9;
+    background-color: transparent;
+    margin-left: -20px;
+    padding: 0;
+    border-radius: 10px;
+
+
+
+  }
+
+  .ourchnnelpartner-card-slider .swiper {
+    border-radius: 0px;
+  }
+
+  .ourchnnelpartner-card-slider .swiper-slide {
+    width: 100%;
+    height: fit-content;
+    /* Adjust height to match parent */
+    position: relative;
+    color: white;
+    background-color: transparent;
+
+
+
+  }
+
+  .swiper-slide .slide-content {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 98%;
+    background-color: rgb(10, 10, 10, 0.5);
+    height: fit-content;
+    padding: 50px;
+    padding-top: 0px;
+    /* margin-left: 0%; */
+    margin: auto;
+    border-radius: 10px;
+
+
+  }
+
+  .ourchnnelpartner-card-slider .swiper-slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    scale: 0.98;
+
+  }
+
+  .swiper-slide p {
+    width: 100%;
+    
+  }
+
+  .ouchannelpartne-content {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    scale: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-left: -15px;
+
+  }
+
+  .ourchannel-partner {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 0%;
+    /* border-radius: 8px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+}
+
+  .ourchannel-partner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #3a6ea1;
+  }
+
+  .ourchannel-partner form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .ourchannel-partner label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3a6ea1;
+  }
+
+  .ourchannel-partner input,
+  .ourchannel-partner textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .ourchannel-partner button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ourchannel-partner button:hover {
+    background-color: #0056b3;
+  }
+}
+
+

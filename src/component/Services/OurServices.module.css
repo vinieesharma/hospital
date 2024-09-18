@@ -1,0 +1,239 @@
+/* General container margin */
+
+
+.container {
+  margin: 5rem 0;
+}
+
+/* Default grid for larger screens */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Responsive card grid for mobile and tablets */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Stacks or reduces the size of the cards */
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .card {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .card .header {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card .content {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.5rem 1.8rem;
+  }
+
+  .miniBtn {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .headerTitle {
+    font-size: 4rem;
+  }
+
+  .headerContent {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive card grid for tablets */
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); /* Adjusted for tablet size */
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .card {
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+  }
+
+  .card .header {
+    font-size: 2.8rem;
+  }
+
+  .card .content {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.8rem 2rem;
+  }
+
+  .miniBtn {
+    font-size: 1.4rem;
+    padding: 1.8rem;
+  }
+
+  .headerTitle {
+    font-size: 5rem;
+  }
+
+  .headerContent {
+    font-size: 2rem;
+  }
+}
+
+/* Default card styling */
+.card {
+  background-color: #3053a9;
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.card:hover {
+  color: #3152A9;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #3152A9;
+}
+
+.card .header {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.card .content {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+}
+
+/* Grid header */
+.gridHeader {
+  grid-column: span 2;
+  padding: 3rem;
+}
+
+.headerTitle {
+  font-size: 6rem;
+  line-height: 1.1;
+  overflow-y: hidden;
+  margin-bottom: 1.6rem;
+}
+
+.headerContent {
+  font-size: 2.2rem;
+  margin-bottom: 3.2rem;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  padding: 1.9rem 2.1rem;
+  border: 1px solid #12bc76;
+  background-color: #fff;
+  transition: 0.2s all linear;
+  color: #12bc76;
+  border-radius: 5rem;
+  font-family: "Inter";
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #12bc76;
+  color: #fff;
+}
+
+.miniBtn {
+  padding: 2.2rem;
+  /* border: 1px solid #12bc76; */
+  background-color: #3053a9;
+  color: #fff;
+  border-radius: 5rem;
+  font-family: "Inter";
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s all linear;
+  border: none;
+}
+
+.miniBtn:hover {
+  background-color: #fff;
+  color: #3053a9;
+    border: 1px solid #3053a9 ;
+}
+
+.miniBtn img {
+  width: 1rem;
+  height: auto;
+}
+
+
+/* Responsive card grid for screens smaller than 420px */
+@media (max-width: 420px) {
+  .cardGrid {
+    grid-template-columns: 1fr; /* Makes all cards stack vertically */
+    gap: 1rem; /* Adjusts the gap between the stacked cards */
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%; /* Ensures the cards take full width */
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .card .header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .card .content {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .miniBtn {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .headerTitle {
+    font-size: 3rem;
+  }
+
+  .headerContent {
+    font-size: 1.6rem;
+  }
+}

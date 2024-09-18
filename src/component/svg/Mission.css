@@ -1,0 +1,15 @@
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: white; /* White background for the circle */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a nicer look */
+}
+
+.icon-wrapper svg {
+    width: 24px;  /* Ensure the SVG fits inside the circle */
+    height: 24px; /* Ensure the SVG fits inside the circle */
+}

@@ -1,0 +1,312 @@
+/* Banner container */
+.banner {
+  background-image: url('../../img/home\ banner\ img.png');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 85rem; /* 900px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem; /* 20px */
+  color: white;
+  overflow-y: hidden;
+  position: relative;
+  background-color: rgb(164, 164, 219);
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner .custom-shape-divider-bottom-1725689494 {
+  position: absolute;
+bottom: 0px; /* 700px */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725689494 svg {
+  position: relative;
+  display: block;
+  width: calc(280% + 1.3px);
+  height: 19.56rem; /* 313px */
+}
+
+.custom-shape-divider-bottom-1725689494 .shape-fill {
+  fill:white;
+}
+
+/* Banner content */
+.banner-content {
+  padding: 5.625rem; /* 90px */
+  padding-top: 10rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: hidden;
+  padding-left: 3rem; /* 30px */
+}
+
+/* Banner text */
+.banner-text {
+  width: 55%;
+  font-size: 76px; /* 128px */
+  margin-bottom: 1.25rem; /* 20px */
+  text-align: left;
+  line-height: 8rem; /* 76px */
+  overflow-y: hidden;
+  font-weight: 800;
+  font-family: "overlock", sans-serif;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #f46d67;
+}
+
+.neonatology {
+  color:white;
+}
+
+/* Button container */
+.buttons-container {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem; /* 10px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+/* Button styles */
+.btn {
+  background-color: transparent;
+  border-radius: 6.25rem; /* 100px */
+  border: solid 0.0625rem white;
+  color: white;
+  padding: 18px 24px; /* 20px 30px */
+  font-size:16px; /* 14px */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 700;
+  margin-top: 1rem; /* 20px */
+}
+
+.btn2 {
+  background-color: #f46d67;
+}
+
+.btn2:hover {
+  color: #f46d67;
+  background-color: #FFFFFF;
+}
+
+.btn1:hover {
+  background-color: white;
+  color: #3322af;
+}
+
+/* Schedule container */
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.schedule-texts {
+  display: flex;
+  align-items: left;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.schedule-text {
+  text-align: left;
+  margin-right: 0.625rem; /* 10px */
+    width: 12.5rem; /* 200px */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 40px;
+}
+.schedule-container .schedule-texts a{
+  text-decoration: none;
+  width:fit-content;
+ 
+}
+
+
+.schedule-text .callno {
+  width:20rem;
+  font-size: 32px; /* 30px */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 4px;
+  color: white;
+
+}
+
+.schedule-texts .schedule-text:hover .callno {
+  color: #f46d67;
+}
+
+.schedule-texts .schedule-text:hover .callno .icon {
+  color: #edefed;
+}
+
+.vertical-divider {
+  border: none;
+  border-left: 0.0625rem solid white; /* 1px */
+  height: 5rem; /* 40px */
+  margin: 0 0.625rem; /* 10px */
+  margin-right: 2rem;
+  color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) { /* 768px */
+
+  .banner {
+    background-size: 50% contain;
+    background-repeat: no-repeat;
+    height: 43.75rem; /* 700px */
+    display: block;
+    align-items: center;
+    padding: 0 1.25rem; /* 20px */
+    overflow-y: hidden;
+    position: relative;
+    margin: 0;
+  }
+  
+  .banner .custom-shape-divider-bottom-1725689494 {
+    top: 31.25rem; /* 500px */
+  }
+
+  .custom-shape-divider-bottom-1725689494 svg {
+    height: 13.31rem; /* 213px */
+  }
+
+  .banner-content {
+    padding: 0;
+    padding-top: 6.25rem; /* 100px */
+  }
+
+  .banner .banner-text {
+    width: 90%;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding-top: 67px;
+}
+
+
+.buttons-container {
+  /* margin-top: 5rem; */
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0px;
+}
+
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+  .divider {
+    width: 100%;
+  }
+  .schedule-text {
+    text-align: left;
+    margin-right: 0.625rem; /* 10px */
+      width: 12.5rem; /* 200px */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .schedule-text .callno {
+    width:fit-content;
+    /* font-size: 32px; 30px */
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    column-gap: 0px;
+    color: white;
+    font-size: 2rem;
+
+    padding: 0;
+  
+  }
+
+
+  .btn {
+    padding: 0.5rem 1rem; /* 8px 16px */
+    font-size: 0.9rem; /* 14px */
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  /* tablet */
+ .banner {
+  background-size: 100% contain;
+  background-repeat: no-repeat;
+  height: 600px; /* 1000px */
+  display: block;
+  align-items: center;
+  padding: 0 1.25rem; /* 20px */
+  overflow-y: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.banner .custom-shape-divider-bottom-1725689494 {
+
+  bottom: 0px; /* 700px */
+}
+
+.custom-shape-divider-bottom-1725689494 svg {
+  height: 17.38rem; /* 300px */
+}
+
+.banner-content {
+  padding: 0;
+  padding-top: 8.75rem; /* 150px */
+  padding-left: 3rem;
+}
+
+.banner .banner-text {
+  width: 60%;
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-top: 72px;
+ 
+}
+
+.buttons-container {
+  /* margin-top: 5rem; */
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0px;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+}

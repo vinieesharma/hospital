@@ -1,0 +1,200 @@
+/* Main Container for About Us Section */
+
+/* Vision Section */
+.vision-section {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 200px;
+  justify-content: space-between; /* Ensures spacing between text and image */
+
+  height: fit-content;
+}
+
+.vision-image {
+  font-family: Questrial, sans-serif; /* Added sans-serif fallback */
+  font-size: 18px;
+  line-height: 28px;
+  width: 60%; /* Reduced to ensure better responsiveness */
+  height: auto; /* Allows image height to adapt to content */
+  display: inline-block;
+}
+
+.vision-image img {
+  width: 100%; /* Adjusts image width to parent container */
+  height: auto; /* Ensures proper aspect ratio */
+  padding-left: 50px;
+  object-fit: cover; /* Keeps the image contained within the box */
+  border-radius: 10px;
+}
+
+.vision-text {
+  position: absolute; /* Changed to relative for better positioning */
+  top: 100px; /* Removed top offset for consistent layout */
+  right: 50px; /* Removed right offset for better flexibility */
+  font-size: 18px;
+  line-height: 26px;
+  padding: 55px;
+  background-color: #f8f8f8;
+  color: #1b3c74;
+  border-radius: 10px;
+  z-index: 1;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better separation */
+  height: fit-content;
+}
+
+.vision-text h2 {
+  font-family: "Overlock", sans-serif;
+  font-size: 24px;
+  color: #1b3c74;
+  margin-bottom: 10px;
+}
+
+.vision-text h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1b3c74;
+}
+
+.vision-text h3 svg {
+  width: 24px;
+  height: 24px;
+  fill: #1b3c74;
+}
+
+.vision-text p {
+  font-size: 14px;
+  line-height: 27px;
+  font-family: "Albert Sans", sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .vision-section {
+    flex-direction: column-reverse; /* Stack image and text on smaller screens */
+    align-items: center;
+  }
+
+  .vision-image {
+    width: 80%; /* Reduce image width on smaller screens */
+    height: auto;
+    padding-left: 0;
+  }
+
+  .vision-text {
+    width: 80%; /* Increase width of text block on smaller screens */
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-image img {
+    width: 100%; /* Make image take full width of parent container */
+    height: auto;
+  }
+
+  .vision-text {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 220px) and (max-width:1024px) {
+/* Main Container for About Us Section */
+
+/* Vision Section */
+.vision-section {
+  position: relative;
+  top: 0px;
+  /* left: 0px; */
+  right:0px;
+
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 0px;
+  padding: 0px;
+  padding-bottom: 50px;
+  justify-content: space-between; /* Ensures spacing between text and image */
+
+}
+
+.vision-image {
+  /* font-family: Questrial, sans-serif; Added sans-serif fallback */
+  font-size: 0px;
+  line-height: 28px;
+  width: 100%; /* Reduced to ensure better responsiveness */
+  height: auto; /* Allows image height to adapt to content */
+  display: inline-block;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+
+}
+
+.vision-image img {
+  width: 100%; /* Adjusts image width to parent container */
+  height: auto; /* Ensures proper aspect ratio */
+  padding-left:0px;
+  object-fit: cover; /* Keeps the image contained within the box */
+  border-radius: 10px;
+}
+
+.vision-text {
+  position: relative; /* Changed to relative for better positioning */
+  top: 0px; /* Removed top offset for consistent layout */
+  right: 0; /* Removed right offset for better flexibility */
+  font-size: 18px;
+  line-height: 26px;
+  padding: 55px;
+  background-color: #f8f8f8;
+  color: #1b3c74;
+  border-radius: 10px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better separation */
+}
+
+.vision-text h2 {
+  font-family: "Overlock", sans-serif;
+  font-size: 20px;
+  color: #1b3c74;
+  margin-bottom: 10px;
+  text-align:left;
+  width: 100%;
+}
+
+.vision-text h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1b3c74;
+}
+
+.vision-text h3 svg {
+  width: 24px;
+  height: 24px;
+  fill: #1b3c74;
+}
+
+.vision-text p {
+  font-size: 14px;
+  line-height: 27px;
+  font-family: "Albert Sans", sans-serif;
+}
+
+}

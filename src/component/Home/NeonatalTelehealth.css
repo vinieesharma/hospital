@@ -1,0 +1,230 @@
+.neonatal-container {
+  /* background-image: url('C:/Users/acoly/OneDrive/Desktop/projects/sloane/Sloane-Virtual-Hospital/src/img/background_02 (1).jpg'); */
+  background-image: url('../../img/background_02\ \(1\).jpg');
+  background-size: 100% 100%;
+  background-position: center;
+
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.flex-box {
+  /* display: flex; */
+
+
+  width: 100%;
+  height: fit-content;
+}
+
+.box1 {
+
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+  padding-bottom: 50px;
+
+}
+
+.box1 h2 {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 3rem;
+  line-height: 3rem;
+  height: 120px;
+  width: 80%;
+  font-style: italic;
+  font-family: "overlock" , sans-serif;
+
+}
+
+.box1 h2 span {
+  color: rgb(228, 78, 78);
+
+}
+
+
+.box1 p {
+  width: 80%;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 0em;
+  font-family: "Albert Sans", sans-serif;
+
+}
+
+.box1 .make-appointment {
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+
+  border-radius: 20px;
+  background-color: transparent;
+
+  text-decoration: none;
+  color: white;
+}
+
+.box1 a {
+  width: 100px;
+  height: 200px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: #FFFFFF 1px solid;
+  text-decoration: none;
+  color: white;
+
+}
+
+.box1 a:hover {
+  background-color: white;
+  color: #9f1a53;
+  border: #9f1a53 solid 1px;
+}
+
+
+
+.custom-shape-divider-bottom-1725517865 {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  /* border: solid 2px black; */
+  height: 300px;
+  /* display: none; */
+
+}
+
+.custom-shape-divider-bottom-1725517865 svg {
+  position: relative;
+  display: block;
+  width: calc(279% + 1.3px);
+  height: 335px;
+}
+
+.custom-shape-divider-bottom-1725517865 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+@media screen and (max-width:768px) {
+  .neonatal-container {
+    /* background-image: url('C:/Users/acoly/OneDrive/Desktop/projects/sloane/Sloane-Virtual-Hospital/src/img/background_02 (1).jpg'); */
+    background-image: url('../../img/background_02\ \(1\).jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+    padding: 0%;
+    border: 0px;
+  }
+
+  .flex-box {
+    /* display: flex; */
+
+
+    width: 100%;
+    height: fit-content;
+  }
+
+  .box1 {
+
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    padding-bottom: 50px;
+
+  }
+
+  .box1 h2 {
+    color: white;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    line-height: 2rem;
+    height: 120px;
+    width: 90%;
+    font-style: italic;
+  }
+
+  .box1 h2 span {
+    color: rgb(228, 78, 78);
+
+  }
+
+
+  .box1 p {
+    width: 80%;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: -1em;
+  }
+
+  .box1 .make-appointment {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+
+    border-radius: 20px;
+    background-color: transparent;
+
+    text-decoration: none;
+    color: white;
+  }
+
+  .box1 a {
+    width: 100px;
+    height: 200px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: #FFFFFF 1px solid;
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .box1 a:hover {
+    background-color: white;
+    color: #9f1a53;
+    border: #9f1a53 solid 1px;
+  }
+
+
+
+  .custom-shape-divider-bottom-1725517865 {
+    position: absolute;
+    top: 265px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* border: solid 2px black; */
+    height: 290px;
+    /* display: none; */
+
+  }
+
+  .custom-shape-divider-bottom-1725517865 svg {
+    position: relative;
+    display: block;
+    width: calc(279% + 1.3px);
+    height: 160px;
+  }
+
+  .custom-shape-divider-bottom-1725517865 .shape-fill {
+    fill: #FFFFFF;
+  }
+}

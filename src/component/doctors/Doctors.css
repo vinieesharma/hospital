@@ -1,0 +1,679 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.doctors-container {
+    width: 100%;
+    padding: 50px;
+    padding-top: 120px;
+    height: fit-content;
+    display: flex;
+}
+
+.app-container {
+    font-family: Arial, sans-serif;
+    /* padding: 64px 65px 64px 65px; */
+    display: block;
+    width: 70%;
+    overflow-x: hidden;
+    margin: auto;
+
+
+
+
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 100%;
+    height: 44px;
+    border: 1.5px solid rgb(212, 205, 205);
+    border-radius: 30px;
+    padding-left: 3px;
+    margin-bottom: 30px;
+
+}
+
+.search-div .icon {
+    width: 40px;
+    height: 40px;
+    color: #3152A9;
+}
+
+.search-bar {
+    margin-top: 20px;
+    width: 90%;
+    border: none;
+}
+
+/* .search-bar input{
+    width: 100%;
+} */
+
+
+.doctors-container .doctor-location {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+}
+
+.doctor-location {
+    display: flex;
+
+    align-items: center;
+    /* Center items vertically */
+    margin-bottom: 20px;
+    /* Add margin for spacing */
+    width: 100%;
+
+    justify-content: space-between;
+
+
+}
+
+.doctorName {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #818181;
+    /* Add space between icon and select */
+}
+
+.doctorName .icon,
+.location .icon {
+    color: #0056b3;
+}
+
+.doctor-select {
+    color: #818181;
+
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1.5px solid rgb(212, 205, 205);
+
+}
+
+.location {
+    width: fit-content;
+    display: flex;
+    background-color: transparent;
+}
+
+.location-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #818181;
+
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.location-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1.5px solid rgb(212, 205, 205);
+
+}
+
+.main-section {
+    width: 100%;
+    max-height: fit-content;
+    /* overflow-y: auto; */
+
+
+}
+
+.doctor-list-container {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+
+}
+
+
+.doctor-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.doctor-card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctor-details {
+    flex: 1;
+
+}
+
+
+.doctor-details h2 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.doctor-specialization {
+    color: #3152A9;
+}
+
+.doctor-qualification,
+.doctor-hospital,
+.doctor-availability {
+    margin: 5px 0;
+    color: #818181;
+    margin-top: 20px;
+
+}
+
+.doctor-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doctor-actions .action-btn {
+    margin-bottom: 5px;
+    width: 170px;
+    height: fit-content;
+    background-color: #3152A9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 20%;
+}
+
+.action-btn .icon {
+    color: white;
+    width: 25px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.action-btn span {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.sidebar {
+    width: 30%;
+    height: 500px;
+    padding-left: 20px;
+    background-color: transparent;
+    position:relative
+
+
+}
+
+.sidebar img {
+    top: 100px;
+    left: 70%;
+    position: fixed;
+    width: 30%;
+    height: 95%;
+    border-radius: 10px;
+    object-fit:cover;
+    object-position: center;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .doctors-container {
+        width: 100%;
+        padding: 107px 10px 10px 10px;
+        /* padding-top: 70px; */
+        height: fit-content;
+        display: flex;
+    }
+
+    .app-container {
+        font-family: Arial, sans-serif;
+        /* padding: 64px 65px 64px 65px; */
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+        margin: auto;
+    }
+
+    .search-div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        height: 55px;
+        border: 1.5px solid rgb(212, 205, 205);
+        border-radius: 30px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        position: relative;
+
+    }
+
+    .search-div .icon {
+        width: 40px;
+        height: 40px;
+        color: #3152A9;
+    }
+
+    .search-div .search-bar input {
+        width: 80%;
+        height: 100%;
+        /* background-color: black; */
+    }
+    .doctors-container .doctor-location {
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        gap: 30px
+    }
+    .doctorName {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #818181;
+        /* Add space between icon and select */
+    }
+
+    .doctorName .icon,
+    .location .icon {
+        color: #0056b3;
+    }
+
+    .doctor-select {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #818181;
+    }
+
+    .location {
+        background-color: black;
+        width: 100%;
+        width: 100%;
+        display: flex;
+        background-color: transparent;
+    }
+
+    .location .location-select {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        color: #818181;
+        padding-left: 20px;
+
+    }
+
+    .search-bar {
+        margin-bottom: 20px;
+    }
+
+    .location-select {
+        width: 100%;
+        padding: 0px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1.5px solid rgb(212, 205, 205);
+
+    }
+
+    .main-section {
+        width: 100%;
+        max-height: fit-content;
+
+    }
+    .doctor-card {
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .doctor-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+
+    .doctor-actions {
+        margin-top: 20px;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .doctor-actions .action-btn {
+        margin: auto;
+        margin-bottom: 5px;
+        width: 170px;
+        height: fit-content;
+        background-color: #3152A9;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        padding-left: 0%;
+        align-items: center;
+    }
+
+
+}
+
+/* tablet responsive start  */
+@media  (min-width: 768px) and (max-width: 1200px){
+
+.doctors-container .sidebar{
+    display: none;
+}
+    .doctors-container {
+        width: 100%;
+        padding: 50px;
+        padding-top: 120px;
+        height: fit-content;
+        display: flex;
+        overflow-x: hidden;
+    }
+    
+    .app-container {
+        font-family: Arial, sans-serif;
+        /* padding: 64px 65px 64px 65px; */
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+        margin: auto;
+    
+    
+    
+    
+    }
+    
+    .search-div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 100%;
+        height: 45px;
+        border: 1.5px solid rgb(212, 205, 205);
+        border-radius: 30px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .search-div .icon {
+        width: 40px;
+        height: 40px;
+        color: #3152A9;
+    }
+    
+    .search-bar {
+        margin-top: 20px;
+        width: 80%;
+    }
+    
+    /* .search-bar input{
+        width: 100%;
+    } */
+    
+    
+    .doctors-container .doctor-location {
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-bottom: 40px;
+    }
+    
+    .doctor-location {
+        display: flex;
+    
+        align-items: center;
+        /* Center items vertically */
+        margin-bottom: 20px;
+        /* Add margin for spacing */
+        width: 100%;
+    
+        justify-content: space-between;
+    
+    
+    }
+    
+    .doctorName {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #818181;
+        /* Add space between icon and select */
+    }
+    
+    .doctorName .icon,
+    .location .icon {
+        color: #0056b3;
+    }
+    
+    .doctor-select {
+        color: #818181;
+    
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1.5px solid rgb(212, 205, 205);
+    
+    }
+    
+    .location {
+        width: fit-content;
+        display: flex;
+        background-color: transparent;
+    }
+    
+    .location-select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #818181;
+    
+    }
+    
+    .search-bar {
+        margin-bottom: 20px;
+    }
+    
+    .location-select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1.5px solid rgb(212, 205, 205);
+    
+    }
+    
+    .main-section {
+        width: 100%;
+        max-height: fit-content;
+        /* overflow-y: auto; */
+    
+    
+    }
+    
+    .doctor-list-container {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 50px;
+    
+    }
+    
+    
+    .doctor-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .doctor-card {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .doctor-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .doctor-details {
+        flex: auto;
+        width: 100%;
+    
+    }
+    
+    
+    .doctor-details h2 {
+        margin: 0;
+        font-size: 20px;
+        color: black;
+    }
+    
+    .doctor-specialization {
+        color: #3152A9;
+    }
+    
+    .doctor-qualification,
+    .doctor-hospital,
+    .doctor-availability {
+        margin: 5px 0;
+        color: #818181;
+        margin-top: 20px;
+    
+    }
+    
+    .doctor-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .doctor-actions .action-btn {
+        margin-bottom: 5px;
+        width: 170px;
+        height: fit-content;
+        background-color: #3152A9;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        padding-left: 10%;
+    }
+    
+    .action-btn .icon {
+        color: white;
+        width: 25px;
+        height: 35px;
+        margin-right: 5px;
+    }
+    
+    .action-btn span {
+        color: white;
+        font-size: 1.5rem;
+        margin: auto;
+        margin-left: 0px;
+    }
+}
+@media (min-width:428px) and (max-width:926px){
+    .doctor-actions .action-btn {
+        margin-bottom: 5px;
+        width: 170px;
+        height: fit-content;
+        background-color: #3152A9;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        padding-left: 13%;
+    }
+    
+    .action-btn .icon {
+        color: white;
+        width: 25px;
+        height: 35px;
+        margin-right: 5px;
+    }
+    
+    .action-btn span {
+        color: white;
+        font-size: 1.5rem;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+}

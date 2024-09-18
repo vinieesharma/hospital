@@ -1,0 +1,246 @@
+/* General Container Styling */
+.container {
+  margin: 5rem 0;
+}
+
+/* Card Grid Styling */
+.cardGrid {
+  display: block;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Card Item Styling */
+.container .carditem {
+  width: fit-content;
+  height: auto; /* Changed from fixed height to auto for flexibility */
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #3152A9;
+  color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 3rem;
+  padding: 3rem;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.card:hover {
+  color: #3152A9;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #3152A9;
+}
+
+.card .header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  margin-top: 30px;
+}
+
+.card .content {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+  margin-top: 30px;
+}
+
+/* Grid Header Styling */
+.gridHeader {
+  grid-column: span 2;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header Title Styling */
+.headerTitle {
+  font-size: 76px;
+  line-height: 1.1;
+  margin-bottom: 6rem;
+}
+
+/* View All Button Styling */
+.gridHeader .btn1 {
+  margin-top: 40px;
+  padding: 1rem 4rem;
+  border: 1px solid #0f1010;
+  background-color: #fff;
+  color: #0f1010;
+  border-radius: 5rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.btn1:hover {
+  background-color: #3152A9;
+  color: #fff;
+}
+
+/* Mini Button Styling */
+.miniBtn {
+  padding: 2.2rem;
+  border: 1px solid transparent;
+  background-color: white;
+  color: #3152A9;
+  border-radius: 5rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.miniBtn:hover {
+  background-color: #3152A9;
+  color: white;
+  transition: ease-in-out 1000ms;
+}
+
+/* Responsive Styles */
+
+/* For Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .card {
+    width: 48%; /* Adjust width for two-column layout */
+  }
+
+  .gridHeader .btn1 {
+    padding: 0.8rem 3rem; /* Reduce padding for the button */
+  }
+
+  .headerTitle {
+    font-size: 50px; /* Reduce header size */
+    margin-bottom: 4rem;
+  }
+}
+
+/* For Mobile Phones (up to 768px) */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .card {
+    width: 47%; /* Adjust width for two-column layout */
+  }
+
+  .card .header {
+    font-size: 1rem; /* Reduce header size */
+    margin-bottom: 1rem;
+  }
+
+  .card .content {
+    font-size: 1.4rem; /* Reduce content size */
+    margin-bottom: 4rem;
+  }
+
+  .headerTitle {
+    font-size: 40px; /* Reduce the header title for mobile */
+    margin-bottom: 3rem;
+  }
+
+  .gridHeader .btn1 {
+    padding: 0.6rem 2.5rem; /* Further reduce padding for the button */
+  }
+
+  .miniBtn {
+    padding: 1.5rem; /* Reduce button padding */
+  }
+}
+
+/* For Smaller Devices (up to 480px) */
+@media (max-width: 480px) {
+  .container {
+    margin: 0rem 0; /* Reduce margins for small devices */
+    width: 100%;
+  }
+
+
+  .cardGrid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+
+
+
+  .card {
+    padding: 2rem;
+     width:100%;
+  }
+  .gridHeader{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .headerTitle{
+    font-size: 3rem; /* Reduce the header title for mobile */
+    width: fit-content;
+    /* margin-bottom: 2rem; */
+  
+  }
+
+  .card .header {
+    font-size: 1.8rem; /* Further reduce header size */
+  }
+
+  .card .content {
+    font-size: 1.2rem; /* Further reduce content size */
+    margin-bottom: 2rem;
+  }
+
+  .miniBtn {
+    padding: 1.2rem; /* Reduce button padding further */
+  }
+
+  .OurServicesHomesection_gridHeader__Vm5KP {
+    /* display: flex; */
+    grid-column: span 2;
+    justify-content: space-between;
+    /* padding: 3rem; */
+}
+.gridHeader .btn1 {
+  margin-top: 0px;
+  padding: 1rem 1rem;
+  border: 1px solid #0f1010;
+  background-color: #fff;
+  color: #0f1010;
+  border-radius: 5rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.OurServicesHomesection_gridHeader__Vm5KP .OurServicesHomesection_btn1__y6\+XM {
+  margin-top: 0px;
+  padding: 1rem 4rem;
+  border: 1px solid #0f1010;
+  background-color: #fff;
+  color: #0f1010;
+  border-radius: 5rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.OurServicesHomesection_headerTitle__LOMVY {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+}
+
+

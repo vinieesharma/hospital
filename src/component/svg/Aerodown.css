@@ -1,0 +1,8 @@
+/* Additional CSS for the Aerodown SVG if needed */
+.custom-card {
+    position: relative;
+  }
+  
+  .custom-card + .aerodown {
+    margin-top: 20px;
+  }

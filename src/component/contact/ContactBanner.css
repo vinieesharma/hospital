@@ -1,0 +1,41 @@
+/* Hero Image Section */
+.about-us-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+}
+ 
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+ 
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    padding: 90px;
+    border-radius: 10px;
+    padding-top: 300px;
+    z-index: 1;
+}
+ 
+.overlay-text h1 {
+    font-size: 76px;
+    margin: 0;
+}
+ 
+.overlay-text p {
+    font-size: 22px;
+    margin-top: 10px;
+}

@@ -1,0 +1,113 @@
+/* Main container styling */
+.book-appointment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 78%;
+    text-align: center;
+    padding-top: 100px;
+}
+ 
+/* Title styling */
+.book-appointment-container h2 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
+/* Speciality Grid */
+.speciality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+ 
+/* Speciality card styling */
+.speciality-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 37px;
+    background-color: #f9f9f9;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: border 0.3s;
+    
+}
+ 
+.speciality-card img {
+    width: 70%;
+    margin-bottom: 10px;
+}
+ 
+.speciality-card p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+}
+ 
+/* On speciality selection */
+.speciality-card.selected {
+    border-color: #007bff;
+    background-color: #eef7ff;
+}
+ 
+/* Checkbox styling */
+.checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+ 
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #007bff;
+}
+ 
+/* Sticky confirm button */
+.confirm-button {
+    position: sticky;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.confirm-button:hover {
+    background-color: #007bff;
+}
+ 
+/* Responsive styling */
+@media (max-width: 768px) {
+    .speciality-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 480px) {
+    .speciality-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .book-appointment-container h2 {
+        font-size: 1.5rem;
+    }
+ 
+    .confirm-button {
+        font-size: 1rem;
+        width: 80%;
+    }
+}

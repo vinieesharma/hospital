@@ -1,0 +1,413 @@
+.labtest-banner {
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    background-image: url(../../img/labtest\ banner.png);
+    background-size: cover;
+    /* filter: brightness(0.7); */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Location Selection */
+.labtest-banner .choose-location {
+    align-items: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 250px;
+
+    /* padding-left: -20px; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+.choose-location p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: "Albert Sans", sans-serif;
+}
+
+.labtest-banner .location {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(248, 250, 250);
+    border-radius: 30px;
+}
+
+.select-location {
+    width: 93%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(88, 82, 82);
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.labtest-header {
+    font-family: "Overloack", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* Lab Test Search Bar */
+.choose-labtest {
+    width: 60%;
+    max-width: 600px;
+    height: 40px;
+    background-color: white;
+
+    margin-top: 70px;
+    border-radius: 30px;
+    outline: auto white;
+    display: flex;
+}
+
+.labtest-search {
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    height: 100%;
+    margin-left: 0;
+    outline: none;
+    padding-left: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    font-size: 40px;
+    padding-left: 0px;
+    color: #3152A9;
+}
+
+/* Lab Test List Section */
+.labtest-list {
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+}
+
+/* Cart and View Cart */
+.cart-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    font-size: 2.5rem;
+    color: #3152A9;
+}
+
+.view-cart-button {
+    background-color: initial;
+    border: none;
+    border-radius: 5px;
+    color: #3152a9;
+    cursor: pointer;
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 0;
+    text-decoration: underline;
+}
+
+
+.test-item {
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    font-family: albert sans, sans-serif;
+    font-size: 2rem;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 13px 25px;
+}
+
+.test-item .test-name {
+    font-family: "Albert Sans", sans-serif;
+    font-size: 30;
+
+}
+
+.test-item button {
+    background-color: #3152a9;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 7px 19px;
+    transition: background-color .3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.test-item p span {
+    font-family: Albert Sans, sans-serif;
+    font-size: 35;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.test-item button:hover {
+    background-color: #0056b3;
+}
+
+.labtest-header h2 {
+    font-family: overlock, sans-serif;
+    font-size: 3.59rem;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .labtest-banner {
+        width: 100%;
+        height: fit-content;
+        padding-top: 95px;
+        background-image: url(../../img/labtest\ banner.png);
+        background-size: fill;
+        background-repeat: no-repeat;
+        /* filter: brightness(/0.8); */
+        background-position: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 50px;
+
+    }
+
+
+    /* Location Selection */
+    .labtest-banner .choose-location {
+        width: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+    .choose-location p {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-family: "Albert Sans", sans-serif;
+        text-align: center;
+    }
+
+    .labtest-banner .location {
+        width: 100%;
+        height: 40px;
+        background-color: rgb(248, 250, 250);
+        border-radius: 30px;
+    }
+
+
+    .select-location {
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: rgb(88, 82, 82);
+        padding-left: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 30px;
+        text-transform: capitalize;
+    }
+
+    .labtest-header {
+        font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    /* Lab Test Search Bar */
+    .choose-labtest {
+        width: 75%;
+        max-width: 600px;
+        height: 40px;
+        background-color: white;
+        margin-top: 0px;
+        border-radius: 30px;
+        outline: auto white;
+        display: flex;
+    }
+
+    .labtest-search {
+        width: 100%;
+        height: 95%;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        border-radius: 30px;
+
+    }
+
+    .search-icon {
+        font-size: 40px;
+        padding-left: 10px;
+        color: #3152A9;
+    }
+
+    /* Lab Test List Section */
+    .labtest-list {
+        margin: 40px auto;
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .labtest-header {
+        width: 94%;
+        padding-left: 9px;
+        padding-right: 8px;
+    }
+
+
+    .labtest-header h2 {
+        font-family: "overlock", sans-serif;
+        font-size: 21px;
+    }
+
+    /* Cart and View Cart */
+    .cart-container {
+        display: flex;
+        align-items: left;
+        gap: 10px;
+        padding-left: -20px;
+    }
+
+    .cart-icon {
+        font-size: 2.5rem;
+        color: #3152A9;
+    }
+
+    .view-cart-button {
+        background-color: initial;
+        border: none;
+        border-radius: 5px;
+        color: #3152a9;
+        cursor: pointer;
+        font-size: 1.9rem;
+        font-weight: 500;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+
+
+    .test-item {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        /* padding: 6px 14px 0px 0px; */
+        /* background-color: #f9f9f9; */
+        padding-left: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-size: 1.5rem;
+        /* margin: auto; */
+        margin: 10px 10px;
+        text-align: left;
+    }
+
+    .test-item .test-name {
+        font-family: "Albert Sans", sans-serif;
+        font-size: 20;
+        width:70%;
+   
+
+    }
+
+    .test-item button {
+        background-color: #3152A9;
+        color: #fff;
+        padding: 7px 22px;
+        border: none;
+        border-radius: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+    .test-item .rate-caddtocart {
+        /* padding-left: 50px; */
+        padding: 7px;
+    }
+
+
+
+    .test-item p span {
+        margin: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Albert Sans", sans-serif;
+    }
+
+    .test-item button:hover {
+        background-color: #0056b3;
+    }
+
+
+    .labtest-banner .choose-location {
+        width: 75%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+
+    .select-location {
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: rgb(88, 82, 82);
+        padding-left: 20px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-radius: 30px;
+        text-transform: capitalize;
+    }
+
+
+}

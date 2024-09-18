@@ -1,0 +1,168 @@
+
+
+
+.heroContainer {
+  height: 100vh;
+
+  background-image: url("https://cliniq.bold-themes.com/curves/wp-content/uploads/sites/4/2021/08/background_08.jpg");
+  background-size: cover;
+  /* background-attachment: scroll; */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.innerHeroContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12rem;
+  color: white;
+}
+
+.heroContent h1 {
+  max-width: 60rem;
+  font-size: 8rem;
+  line-height: 1.1;
+}
+
+.heroContent h4 {
+  max-width: 50rem;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 900;
+}
+
+.curve {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+}
+.curve img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom center;
+}
+.btnGreen{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px ;
+  background-color: #3152A9;
+  color: white;
+  font-weight: 700;
+}
+
+
+/* For mobile and tablet view */
+@media (max-width: 768px) {
+  .heroContainer {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2rem; /* Add some padding to prevent text overflow */
+  }
+
+  .innerHeroContainer {
+    left: 1rem; /* Reduce left padding for mobile */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; /* Center text for mobile view */
+  }
+
+  .heroContent h1 {
+    font-size: 4rem; /* Smaller font size for mobile */
+    max-width: 100%;
+  }
+
+  .heroContent h4 {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .btnGreen {
+    font-size: 1.4rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .innerHeroContainer {
+    left: 2rem; /* Adjusted left padding for tablet view */
+  }
+
+  .heroContent h1 {
+    font-size: 6rem;
+  }
+
+  .heroContent h4 {
+    font-size: 2rem;
+  }
+}
+
+.curve img {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+/* Responsive Card Grid */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Stack cards vertically on smaller screens */
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .headerTitle {
+    font-size: 4rem;
+  }
+
+  .headerContent {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.6rem 1.8rem;
+  }
+
+  .miniBtn {
+    font-size: 1.4rem;
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Adjusted for tablet */
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .card {
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.8rem 2rem;
+  }
+
+  .miniBtn {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+}
