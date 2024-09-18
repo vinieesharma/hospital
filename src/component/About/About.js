@@ -29,7 +29,7 @@ const About = () => {
                 </div>
                 <div className="vision-text">
                     <h2>
-                        Welcome to Sloane Virtual Hospital, where innovative online healthcare meets convenience and care.
+                        Welcome to Vinayak Virtual Hospital, where innovative online healthcare meets convenience and care.
                     </h2>
                     <h3>
                         <Mission /> Our Mission
